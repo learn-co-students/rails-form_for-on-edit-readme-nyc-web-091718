@@ -761,3 +761,233 @@ Processing by PostsController#edit as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
   Rendered posts/edit.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 347ms (Views: 318.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-10-15 09:16:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 27ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/students/new" for ::1 at 2018-10-15 09:16:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/students/new"):
+  actionpack (4.2.10) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.10) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.10) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.10) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.10) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.10) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.10) lib/rails/engine.rb:518:in `call'
+  railties (4.2.10) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/zimmer/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/zimmer/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/zimmer/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.2ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 09:16:28 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 359ms (Views: 354.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 09:17:33 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 09:25:08 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:3: syntax error, unexpected '=', expecting ')'
+...=( text_field_tag :title, :id = 'post[title]' );@output_buff...
+...                               ^
+/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:6: syntax error, unexpected '=', expecting ')'
+...xt_area_tag :description, :id = 'post[description]' );@outpu...
+...                               ^):
+  app/views/posts/new.html.erb:3: syntax error, unexpected '=', expecting ')'
+  app/views/posts/new.html.erb:6: syntax error, unexpected '=', expecting ')'
+
+
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.6ms)
+
+
+Started GET "/" for ::1 at 2018-10-15 10:44:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 27ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 10:44:43 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 258ms (Views: 250.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 10:49:02 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+...nd=( f.text_field :title, :id 'post[title]' );@output_buffer...
+...                               ^
+/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...f.text_field :description, id 'post[description]' );@output_...
+...                               ^):
+  app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 10:49:14 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+...nd=( f.text_field :title, :id 'post[title]' );@output_buffer...
+...                               ^
+/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...f.text_field :description, id 'post[description]' );@output_...
+...                               ^):
+  app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.1ms)
+
+
+Started GET "/posts" for ::1 at 2018-10-15 10:49:26 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 10:49:32 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+...nd=( f.text_field :title, :id 'post[title]' );@output_buffer...
+...                               ^
+/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...f.text_field :description, id 'post[description]' );@output_...
+...                               ^):
+  app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 11:02:42 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+...nd=( f.text_field :title, :id 'post[title]' );@output_buffer...
+...                               ^
+/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...f.text_field :description, id 'post[description]' );@output_...
+...                               ^):
+  app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+
+
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.6ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 11:03:06 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+...nd=( f.text_field :title, :id 'post[title]' );@output_buffer...
+...                               ^
+/Users/zimmer/Documents/Flatiron_School/Mod2/Week4/rails-form_for-on-edit-readme-nyc-web-091718/app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting ')'
+....text_field :description, :id 'post[description]' );@output_...
+...                               ^):
+  app/views/posts/new.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/posts/new.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting ')'
+
+
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/zimmer/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 11:20:33 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 11:25:53 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 11:26:33 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 11:30:46 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2018-10-15 11:30:58 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms)
